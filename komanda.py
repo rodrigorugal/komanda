@@ -35,11 +35,11 @@ menu = [
     {'id': 34, 'name': 'FRENCH TOAST', 'price': 5.0}
 ]
 
-table_1 = [{'id': 1, 'amount': 5}, {'id': 19, 'amount': 5}]
+# table_1 = [{'id': 1, 'amount': 5}, {'id': 19, 'amount': 5}]
 
 def calculate_tab (list_itens) :
     tot = 0
-    for item in table_1 :
+    for item in list_itens :
        
         for item_menu in menu :
             if item['id'] == item_menu['id'] :
@@ -48,6 +48,6 @@ def calculate_tab (list_itens) :
 
     return tot
 
-total = calculate_tab(table_1)
+# total = calculate_tab(table_1)
 
-print(total)
+# print(total)
